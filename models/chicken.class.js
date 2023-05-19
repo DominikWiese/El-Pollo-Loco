@@ -9,4 +9,5 @@ class Chicken extends MovableObject {
 
         this.x = 200 + Math.random() * 500;
     }
+    
 }

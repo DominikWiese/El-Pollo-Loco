@@ -6,6 +6,7 @@ class MovableObject {
     img;
     width = 100;
     height = 150;
+    imageCache = [];
 
 
     loadImage(path) {
@@ -13,12 +14,20 @@ class MovableObject {
         this.img.src = path;
     }
 
+    loadImages(arr) {
+        arr.forEach((path) => {
+            let img = new Image();
+            img.src = path;
+            this.imageCache[path] = path;
+        });
+    }
+
 
     moveRight() {
-        
+
     }
 
     moveLeft() {
-        
+
     }
 }
